@@ -31,6 +31,8 @@ gem 'premailer', require: false
 # Remove fat_free_crm dependency, to stop it from being auto-required too early.
 remove 'fat_free_crm'
 
+gem 'puma'
+
 group :development do
   # don't load these gems in travis
   unless ENV["CI"]
@@ -69,8 +71,8 @@ group :test do
   gem 'timecop'
 end
 
-group :heroku do
-  gem 'unicorn', platform: :ruby
+group :proguction do
+  gem 'unicorn', :platform => :ruby
   gem 'rails_12factor'
 end
 
