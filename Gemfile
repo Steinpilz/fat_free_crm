@@ -72,10 +72,10 @@ group :test do
   gem 'timecop'
 end
 
-group :proguction do
-  gem 'unicorn', :platform => :ruby
-  gem 'rails_12factor'
-end
+# group :proguction do
+#   gem 'unicorn', :platform => :ruby
+#   gem 'rails_12factor'
+# end
 
 gem 'sass-rails'
 gem 'coffee-rails'
