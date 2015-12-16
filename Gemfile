@@ -72,7 +72,7 @@ group :test do
   gem 'timecop'
 end
 
-group :proguction do
+group :production do
   gem 'rails_12factor'
 end
 
